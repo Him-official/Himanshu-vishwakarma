@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Vishwakarma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url('orange-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header {
+      text-align: center;
+      margin-top: 30px;
+    }
+    header h1 {
+      font-size: 3em;
+      color: gold;
+      font-family: 'Great Vibes', cursive;
+    }
+    .profile {
+      position: relative;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .profile img.profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid gold;
+      position: relative;
+      z-index: 2;
+    }
+    .mandala-bg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      z-index: 1;
+      animation: rotateMandala 20s linear infinite;
+      opacity: 0.3;
+    }
+    @keyframes rotateMandala {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    .section {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 30px 0;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+    .socials a:hover {
+      color: gold;
+    }
+    .call-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    footer {
+      text-align: left;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: gold;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Himanshu Vishwakarma</h1>
+      <p>Team Leader | BPO</p>
+    </header>
+    <div class="profile">
+      <img src="mandala.png" alt="Mandala" class="mandala-bg" />
+      <img src="profile.png" alt="Profile" class="profile-pic" />
+    </div>
+
+    <div class="section">
+      <h2>Resume</h2>
+      <p>Download my professional resume below:</p>
+      <a href="resume.pdf" download class="call-button">Download Resume</a>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am a seasoned Team Leader in the BPO industry based in Kalwa East, Thane - 400605.
+         With over 4+ years of experience, I drive team success and ensure excellent service delivery.</p>
+    </div>
+
+    <div class="section">
+      <h2>Connect With Me</h2>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/himanshu-vishwakarma-54b33a161" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.instagram.com/_him_official_" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/share/16HLqimfgz/" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook</a>
+      </div>
+      <a href="tel:8097334609" class="call-button">Call Me</a>
+    </div>
+  </div>
+  <footer>
+    All rights reserved 2025 | Himanshu
+  </footer>
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
